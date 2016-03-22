@@ -1,6 +1,6 @@
 #flexgrid
 
-A simple percentage based grid using flexbox
+A simple percentage based grid layout using flexbox
 
 [DEMO](https://ro-savage.github.io/flexgrid)
 
@@ -27,17 +27,17 @@ A simple percentage based grid using flexbox
 
 ## API
 ### Breakpoints
-**`col-#`**: infinite - Applies to everything
+**`col-#`** infinite - Applies to everything
 
-**`col-xs-#`**: <544px - Applies to everything
+**`col-xs-#`** <544px - Applies to everything
 
-**`col-sm-#`**: >544px - Applies above 544px
+**`col-sm-#`** >544px - Applies above 544px
 
-**`col-md-#`**: >768px - Applies above 768px
+**`col-md-#`** >768px - Applies above 768px
 
-**`col-lg-#`**: >992px - Applies above 992px
+**`col-lg-#`** >992px - Applies above 992px
 
-**`col-xl-#`**: >1200px - Applies above 1200px
+**`col-xl-#`** >1200px - Applies above 1200px
 
 ### Containers
 **`flexgrid-container`**: Limited to 1200px wide.
@@ -50,7 +50,7 @@ Can be offset with `col-#-offset` e.g. `col-25-offset` for 25% offset
 ### Available precentages
 **0% to 100% in 5% intervals, plus 33% and 66%**
 
-`0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100`
+`0, 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 66, 70, 75, 80, 85, 90, 95, 100`
 
 ### Hidden elements
 Same API as [Bootstrap v4 responsive utils](http://v4-alpha.getbootstrap.com/layout/responsive-utilities/)
