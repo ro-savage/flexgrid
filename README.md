@@ -2,7 +2,7 @@
 
 A simple percentage based grid using flexbox
 
-[DEMO](http://username.github.io/flexgrid)
+[DEMO](https://ro-savage.github.io/flexgrid)
 
 **Download**: [Developer Version](https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.css) or [Minified Version](https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.min.css)
 
