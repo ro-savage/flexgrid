@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexgrid demo</title>
+  <link rel="stylesheet" href="flexgrid.css" media="all">
+  <style>
+
+    body {
+      font-family: Tahoma, sans-serif;
+    }
+
+    .box {
+      background-color: #206C12;
+      min-height: 40px;
+      width: 100%;
+      color: white;
+      font-family: Tahoma, sans-serif;
+      border-radius: 3px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 10px;
+      -webkit-box-shadow: inset 10px 10px 5px -9px rgba(0,0,0,0.45);
+      -moz-box-shadow: inset 10px 10px 5px -9px rgba(0,0,0,0.45);
+      box-shadow: inset 10px 10px 5px -9px rgba(0,0,0,0.45);
+    }
+
+    .box-nested {
+      margin-top: 10px
+    }
+
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>Flexgrid demo</h1>
+  <p>See the <a href="https://github.com/ro-savage/flexgrid">github repo</a> for help or to fork.</p>
+  <p>Download the <a href="https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.css">dev version</a> or the <a href="https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.min.css">minfied version</a></p>
+  <hr>
+  <div class="flexgrid-container">
+    <h2>Responsive grid - With percent size, auto size, and sized based hidden elements</h2>
+    <div class="row">
+      <div class="col-xs"><div class="box">Auto</div></div>
+      <div class="col-xl-20 col-lg-40 col-md-60 col-sm-80 col-xs-100">
+        <div class="box">
+          <span class="hidden-lg-down">col-xl-20</span>
+          <span class="hidden-md-down hidden-xl-up">col-lg-40</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-60</span>
+          <span class="hidden-xs-down hidden-md-up">col-sm-80</span>
+          <span class="hidden-sm-up">col-xs-100</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-100"><div class="box">col-100</div></div>
+    </div>
+    <div class="row">
+      <div class="col-xl-75 col-md-50 col-xs-100">
+        <div class="box">
+          <span class="hidden-md-down">col-xl-75</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-50</span>
+          <span class="hidden-md-up">col-xs-100</span>
+        </div>
+      </div>
+      <div class="col-xl-25 col-md-50 col-xs-100">
+        <div class="box">
+          <span class="hidden-md-down">col-xl-25</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-50</span>
+          <span class="hidden-md-up">col-xs-100</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-33 col-md-50 col-xs-100">
+        <div class="box">
+          <span class="hidden-md-down">col-xl-33</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-50</span>
+          <span class="hidden-md-up">col-xs-100</span>
+        </div>
+      </div>
+      <div class="col-lg-33 col-md-50 col-xs-100">
+        <div class="box">
+          <span class="hidden-md-down">col-xl-33</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-50</span>
+          <span class="hidden-md-up">col-xs-100</span>
+        </div>
+      </div>
+      <div class="col-lg-33 col-md-100 col-xs-100">
+        <div class="box">
+          <span class="hidden-md-down">col-xl-33</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-100</span>
+          <span class="hidden-md-up">col-xs-100</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-20 col-lg-40 col-md-60 col-sm-80 col-xs-100">
+        <div class="box">
+          <span class="hidden-lg-down">col-xl-20</span>
+          <span class="hidden-md-down hidden-xl-up">col-lg-40</span>
+          <span class="hidden-sm-down hidden-lg-up">col-md-60</span>
+          <span class="hidden-xs-down hidden-md-up">col-sm-80</span>
+          <span class="hidden-sm-up">col-xs-100</span>
+        </div>
+        </div>
+      <div class="col-xs"><div class="box">Auto</div></div>
+    </div>
+  </div>
+  <div class="flexgrid-container">
+    <h2>All sizes. flexgrid-container (Max size 1200px)</h2>
+    <div class="row">
+      <div class="col-100"><div class="box">col-100</div></div>
+    </div>
+    <div class="row">
+      <div class="col-95"><div class="box">col-95</div></div>
+      <div class="col-5"><div class="box">col-5</div></div>
+    </div>
+    <div class="row">
+      <div class="col-90"><div class="box">col-90</div></div>
+      <div class="col-10"><div class="box">col-10</div></div>
+    </div>
+    <div class="row">
+      <div class="col-85"><div class="box">col-85</div></div>
+      <div class="col-15"><div class="box">col-15</div></div>
+    </div>
+    <div class="row">
+      <div class="col-80"><div class="box">col-80</div></div>
+      <div class="col-20"><div class="box">col-20</div></div>
+    </div>
+    <div class="row">
+      <div class="col-75"><div class="box">col-75</div></div>
+      <div class="col-25"><div class="box">col-25</div></div>
+    </div>
+    <div class="row">
+      <div class="col-70"><div class="box">col-70</div></div>
+      <div class="col-30"><div class="box">col-30</div></div>
+    </div>
+    <div class="row">
+      <div class="col-65"><div class="box">col-65</div></div>
+      <div class="col-35"><div class="box">col-35</div></div>
+    </div>
+    <div class="row">
+      <div class="col-60"><div class="box">col-40</div></div>
+      <div class="col-40"><div class="box">col-40</div></div>
+    </div>
+    <div class="row">
+      <div class="col-55"><div class="box">col-45</div></div>
+      <div class="col-45"><div class="box">col-45</div></div>
+    </div>
+    <div class="row">
+      <div class="col-50"><div class="box">col-50</div></div>
+      <div class="col-50"><div class="box">col-50</div></div>
+    </div>
+  </div>
+  <div class="flexgrid-container">
+    <h2>Nested - wrap each row in another flexgrid-container</h2>
+    <div class="row">
+      <div class="col-100">
+        <div class="box box-nested">
+          <div class="flexgrid-container">
+            <div class="row middle-xs">
+              <div class="col-50">
+                <div class="box box-nested" style="background-color: blue">
+                  <div class="flexgrid-container">
+                    <div class="row center-xs">
+                      <div class="col-50 ">
+                        <div class="box box-nested" style="background-color: white"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-25 col-15-offset">
+                <div class="box box-nested" style="background-color: blue">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flexgrid-container-fluid">
+    <h2>flexgrid-container-fluid (100% of screen/div)</h2>
+    <div class="row">
+      <div class="col-100"><div class="box">col-100</div></div>
+    </div>
+    <div class="row">
+      <div class="col-50"><div class="box">col-50</div></div>
+      <div class="col-50"><div class="box">col-50</div></div>
+    </div>
+  </div>
+
+  <p>Released under MIT licence</p>
+</div>
+</body>
+</html>
