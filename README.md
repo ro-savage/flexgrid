@@ -70,6 +70,10 @@ As this project was forked from [flexboxgrid](http://flexboxgrid.com/) all their
 ## Forking
 This project is made to be super simple. Feel free to fork and change breakpoints, names etc.
 
+## Why?
+I wanted something that gave lots of options but remained super simple while using flexbox for people supporting modern browsers. I also wanted something that would be easy to modify if I needed to makes changes or add something.
+Unable to find the right mixture, I decided to create my own.
+
 ## Todo
 * Add more docs
 * Add more demos
