@@ -1,10 +1,12 @@
 #flexgrid
 
-A simple percentage based grid layout using flexbox
+A simple percentage based grid layout using flexbox.
 
-[DEMO](https://ro-savage.github.io/flexgrid)
+[**DEMO**](https://ro-savage.github.io/flexgrid)
 
 **Download**: [Developer Version](https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.css) or [Minified Version](https://raw.githubusercontent.com/ro-savage/flexgrid/master/flexgrid.min.css)
+
+_Based on [flexboxgrid](http://flexboxgrid.com/) and [unsematic](http://unsemantic.com/)_
 
 ## Usage
 ```html
@@ -51,6 +53,11 @@ Can be offset with `col-#-offset` e.g. `col-25-offset` for 25% offset
 **0% to 100% in 5% intervals, plus 33% and 66%**
 
 `0, 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 66, 70, 75, 80, 85, 90, 95, 100`
+
+### Special types
+**`col`**: Makes a column that expands to fit the space
+**`col-fit`**: Makes a column that is the sizes of whatever it contains
+**`row-counter-padding`**: Counter the padding on the container to allow row to sit flush
 
 ### Hidden elements
 Same API as [Bootstrap v4 responsive utils](http://v4-alpha.getbootstrap.com/layout/responsive-utilities/)

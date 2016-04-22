@@ -37,6 +37,11 @@
     margin-left: -0.5rem;
 }
 
+.row-counter-padding {
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
 .row.reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -154,6 +159,13 @@
     flex: 0 0 auto;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+}
+
+.col-fit {
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    max-width: 100%;
 }
 
 .col-xs,
